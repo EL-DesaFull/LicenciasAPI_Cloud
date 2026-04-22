@@ -1,0 +1,6 @@
+@LicenciasAPI_HostAddress = http://localhost:5172
+
+GET {{LicenciasAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
