@@ -50,7 +50,7 @@ namespace LicenciasAPI.Controllers
                 gradoAsignado = solicitud.Grado,
                 enviarCorreo = true, // Indicamos a n8n que debe enviar un correo
                 mensajeParaUsuario = solicitud.Aprobado 
-                    ? $"¡Felicidades {solicitud.Nombre}! Tu solicitud de licencia ha sido aprobada. Diríjase a la oficina central en 7 días para retirar su carnet." 
+                    ? $"¡Felicidades {solicitud.Nombre} {solicitud.Apellido}! Tu solicitud de licencia ha sido aprobada. Diríjase a la oficina central en 7 días para retirar su carnet." 
                     : $"Lo sentimos {solicitud.Nombre}, tu solicitud de licencia ha sido rechazada. Por favor, revisa los requisitos y vuelve a intentarlo.",
                 emailDestino = solicitud.Email
             });
